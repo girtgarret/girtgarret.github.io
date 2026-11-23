@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f5ef;
+  color: #303b30;
+}
+header {
+  background-color: #526b4f;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+header h1 { margin-bottom: 5px; }
+nav {
+  background-color: #dce5d7;
+  text-align: center;
+  padding: 12px;
+}
+button {
+  background-color: #526b4f;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover { background-color: #3d523b; }
+main {
+  max-width: 800px;
+  margin: 25px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+}
+.page h2 { color: #526b4f; }
+input, textarea {
+  display: block;
+  width: 95%;
+  max-width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+textarea { min-height: 70px; }
+.chicken {
+  border: 1px solid #ddd;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 4px;
+}
+.chicken h3 { margin-top: 0; }
+#profile, #savedNotes {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #f4f5ef;
+  border-radius: 4px;
+}
+footer {
+  text-align: center;
+  color: #667366;
+  padding: 20px;
+  font-size: 13px;
+}
+@media (max-width: 600px) {
+  main { margin: 12px; padding: 15px; }
+  nav button { padding: 9px 12px; }
+}

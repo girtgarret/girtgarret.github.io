@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Chicken Wiki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My Chicken Wiki</h1>
+    <p>A place to keep information about my chickens</p>
+  </header>
+  <nav>
+    <button onclick="showPage('home')">Home</button>
+    <button onclick="showPage('chickens')">My Chickens</button>
+    <button onclick="showPage('notes')">Notes</button>
+  </nav>
+  <main>
+    <section id="home" class="page">
+      <h2>Welcome!</h2>
+      <p>This website is my personal wiki for keeping track of my chickens.</p>
+      <p>I can use it to store information about their names, breeds, colors, and personalities.</p>
+      <button onclick="showPage('chickens')">View My Chickens</button>
+    </section>
+    <section id="chickens" class="page" style="display:none">
+      <h2>My Chickens</h2>
+      <p>Select a chicken to see its information.</p>
+      <div id="chickenList"></div>
+      <h3>Add a Chicken</h3>
+      <form id="chickenForm">
+        <input id="name" placeholder="Chicken name" required>
+        <input id="breed" placeholder="Breed">
+        <input id="color" placeholder="Color">
+        <textarea id="description" placeholder="Description"></textarea>
+        <button type="submit">Add Chicken</button>
+      </form>
+      <div id="profile"></div>
+    </section>
+    <section id="notes" class="page" style="display:none">
+      <h2>My Notes</h2>
+      <p>Write down anything you want to remember about your flock.</p>
+      <textarea id="noteText" placeholder="Write a note..."></textarea>
+      <button onclick="saveNote()">Save Note</button>
+      <div id="savedNotes"></div>
+    </section>
+  </main>
+  <footer><p>My Chicken Wiki · Personal Website</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
